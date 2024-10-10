@@ -5,6 +5,9 @@ import {BrowserRouter as Router,Route,Link, Routes}
 from 'react-router-dom'
 import Principal from './Principal'
 import Footer from './Footer'
+import Contador from './COntador'
+import { Mensaje } from './Mensaje'
+import { RickAndMorty } from './RickAndMorty'
 let encabezado='Encabezado 🎉 🎁'
 let principal='Principal'
 let footer='Derechos reservados ✅'
@@ -29,7 +32,9 @@ function App() {
         <Route path='/header' element={<Header text={encabezado}/>}/>
         <Route path='/main' element={<Principal text={principal}/>}/>
         <Route path='/footer' element={<Footer text={footer}/>}/>
-        <Route/>
+        <Route path='/contador' element={<Contador/>}/>
+        <Route path='/mensaje' element={<Mensaje/>}/>
+        <Route path='/api' element={<RickAndMorty/>}/>
       </Routes>
     </Router>
     </>
