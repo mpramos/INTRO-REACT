@@ -28,8 +28,8 @@ useEffect(()=>{
                 <div>
                     <img src={character.image} alt="" />
                 <p>{character.name}</p>
+                <p>Cambio</p>
                 </div>
-
             ))}
             </div> 
     </div>
